@@ -182,7 +182,6 @@ Customer shows high churn risk due to disabled auto-renewal.
 
 **Prajwal Mesare**
 B.Tech CSE (Data Science) — TGPCET, Nagpur | Graduating 2027
-ML Intern @ CodeAlpha
 
 [![GitHub](https://img.shields.io/badge/GitHub-PrajwalMesare-181717?style=flat&logo=github)](https://github.com/PrajwalMesare)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/prajwal-mesare)
