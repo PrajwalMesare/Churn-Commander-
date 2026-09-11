@@ -1,38 +1,30 @@
-# Core Libraries
-streamlit>=1.28.0
-pandas==2.1.4
-numpy>=1.26.0,<2  # ✅ FIXED: Must be compatible with pandas 2.1.4
-plotly>=5.17.0
+# 🚀 OPTIMIZED FOR STREAMLIT CLOUD - Minimal Dependencies
 
-# Machine Learning & Model
+# Core (Streamlit + Data)
+streamlit>=1.28.0
+pandas>=2.0.0,<3
+numpy>=1.24.0,<2
+
+# ML & Visualization (Keep it lean)
 xgboost>=2.0.0
-scikit-learn>=1.3.0
-joblib>=1.3.0
+scikit-learn>=1.2.0
+plotly>=5.14.0
+
+# SHAP (Keep for explainability, but it's heavy)
 shap>=0.42.0
 
-# AI & LLM Integration
+# AI Integration (Gemini - lightweight)
 google-generativeai>=0.3.0
-langchain>=0.1.0
-langchain-google-genai>=0.0.11
 
-# Email Services
+# Email Services (Keep minimal)
 email-validator>=2.0.0
 python-dotenv>=1.0.0
 
-# Data Processing & Validation
-openpyxl>=3.1.0
-python-multipart>=0.0.6
-
-# Security & Encryption
+# Security
 cryptography>=41.0.0
 
-# Logging & Monitoring
-python-logging-loki>=0.3.0
-
-# Utilities
-certifi>=2023.7.0
-requests>=2.31.0
-
-# Optional but recommended
-sendgrid>=6.11.0
-reportlab>=4.0.0
+# REMOVE THESE TO SPEED UP:
+# - langchain (was heavy, not essential)
+# - sendgrid (optional - SMTP works)
+# - reportlab (optional - PDF generation)
+# - python-logging-loki (optional - logging)

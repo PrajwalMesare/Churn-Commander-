@@ -1,3 +1,23 @@
+# ⚡ OPTIMIZED FOR FAST DEPLOYMENT
+
+[client]
+showErrorDetails = false
+showWarnings = false
+toolbarMode = "minimal"
+
+[logger]
+level = "error"
+
+[server]
+maxUploadSize = 200
+enableXsrfProtection = true
+enableCORS = false
+headless = true
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"
+
 [theme]
 primaryColor = "#667eea"
 backgroundColor = "#ffffff"
@@ -5,24 +25,6 @@ secondaryBackgroundColor = "#f0f2f6"
 textColor = "#262730"
 font = "sans serif"
 
-[client]
-showErrorDetails = true
-toolbarMode = "developer"
-
-[logger]
-level = "info"
-
-[server]
-maxUploadSize = 200
-enableXsrfProtection = true
-enableCORS = false
-
-[browser]
-gatherUsageStats = false
-
-[ui]
-hideTopBar = false
-hideFooter = false
-
-[client.logging]
-level = "info"
+[cache]
+# Optimize caching
+maxMegabytes = 500

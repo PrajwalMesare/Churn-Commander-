@@ -1,0 +1,10 @@
+# Streamlit will ignore these folders during build
+archive/
+.git/
+__pycache__/
+*.pyc
+.pytest_cache/
+logs/
+*.ipynb
+EOEOF
+echo "✅ Created .streamlitignore"
