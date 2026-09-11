@@ -1,38 +1,38 @@
 # Core Libraries
-streamlit==1.31.0
+streamlit>=1.28.0
 pandas==2.1.4
-numpy==1.24.3
-plotly==5.17.0
+numpy>=1.26.0,<2  # ✅ FIXED: Must be compatible with pandas 2.1.4
+plotly>=5.17.0
 
 # Machine Learning & Model
-xgboost==2.0.3
-scikit-learn==1.3.2
-joblib==1.3.2
-shap==0.43.0
+xgboost>=2.0.0
+scikit-learn>=1.3.0
+joblib>=1.3.0
+shap>=0.42.0
 
 # AI & LLM Integration
-google-generativeai==0.3.0
-langchain==0.1.0
-langchain-google-genai==0.0.11
+google-generativeai>=0.3.0
+langchain>=0.1.0
+langchain-google-genai>=0.0.11
 
 # Email Services
-email-validator==2.1.0
-python-dotenv==1.0.0
+email-validator>=2.0.0
+python-dotenv>=1.0.0
 
 # Data Processing & Validation
-openpyxl==3.1.2
-python-multipart==0.0.6
+openpyxl>=3.1.0
+python-multipart>=0.0.6
 
 # Security & Encryption
-cryptography==41.0.7
+cryptography>=41.0.0
 
 # Logging & Monitoring
-python-logging-loki==0.3.2
+python-logging-loki>=0.3.0
 
 # Utilities
-certifi==2023.7.22
-requests==2.31.0
+certifi>=2023.7.0
+requests>=2.31.0
 
 # Optional but recommended
-sendgrid==6.11.0  # For SendGrid email integration
-reportlab==4.0.9  # For PDF report generation
+sendgrid>=6.11.0
+reportlab>=4.0.0
