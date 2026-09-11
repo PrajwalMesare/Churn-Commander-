@@ -1,13 +1,13 @@
-# 🎵 CHURN COMMANDER v2.0
+# 🎵 CHURN COMMANDER
 ## AI-Powered Customer Retention Platform
 
-![Version](https://img.shields.io/badge/version-2.0-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-green.svg)
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 
 ---
 
-## ✨ **NEW IN v2.0 - 3 MAJOR FEATURES**
+## ✨ **KEY FEATURES**
 
 ### **Feature 1: Flexible Customer Data Upload** 📁
 - Upload any CSV with customer data
@@ -29,10 +29,10 @@
 - Export analysis as CSV
 - Quick actionable insights
 
-### **Existing Features** ✅
+### **Core Features** ✅
 - Individual customer churn prediction (96% accuracy)
 - SHAP feature explainability
-- AI retention strategy generation
+- AI retention strategy generation (Gemini)
 - Behavioral analytics
 
 ---
@@ -76,9 +76,9 @@ streamlit run app.py
 ## 🏗️ **Architecture**
 
 ```
-Churn Commander v2.0
-├── app.py (3 Tabs: Analysis | Dashboard | Data)
-├── utils/ (7 modules for separation of concerns)
+Churn Commander
+├── app.py                  (Main app - 3 Tabs)
+├── utils/                  (7 utility modules)
 │   ├── data_loader.py
 │   ├── prediction_engine.py
 │   ├── ai_strategy.py
@@ -100,15 +100,15 @@ Churn Commander v2.0
 1. Upload CSV or use default data
 2. Select customer
 3. View churn risk, AI strategy, analytics, SHAP explanation
-4. **Generate & send personalized email** ⭐ NEW
+4. **Generate & send personalized email**
 
-### **Tab 2: Company Dashboard** ⭐ NEW
+### **Tab 2: Company Dashboard**
 - View company-wide KPIs
 - Risk distribution across customers
 - Email campaign stats
 - Export risk lists
 
-### **Tab 3: Data Management** ⭐ NEW
+### **Tab 3: Data Management**
 - Upload your own customer CSV
 - View data preview & statistics
 - Download processed data
@@ -140,7 +140,7 @@ SENDGRID_API_KEY = "SG.xxxxx"
 
 ```
 Churn-Commander-/
-├── app.py                          # Main app (v2.0)
+├── app.py                          # Main app
 ├── utils/                          # 7 utility modules
 │   ├── data_loader.py
 │   ├── prediction_engine.py
@@ -176,18 +176,18 @@ Churn-Commander-/
 
 ---
 
-## 🧪 **Features Checklist**
+## ✅ **Features Checklist**
 
-**Old Features (v1.0)** ✅
+**Core Features**
 - [x] Churn prediction (96.41% accuracy)
 - [x] SHAP explainability
 - [x] AI retention strategy (Gemini)
 - [x] Behavioral analytics
 
-**New Features (v2.0)** ⭐
-- [x] Flexible CSV data upload (Feature 1)
-- [x] Personalized email sender (Feature 2)
-- [x] Company dashboard (Feature 3)
+**New Features**
+- [x] Flexible CSV data upload
+- [x] Personalized email sender
+- [x] Company dashboard
 - [x] Email logging & tracking
 - [x] Rate limiting & error handling
 - [x] Input validation & sanitization
@@ -244,4 +244,4 @@ MIT License
 
 ---
 
-**Version:** 2.0 | **Status:** ✅ Production Ready | **Last Updated:** Sep 2, 2024
+**Status:** ✅ Production Ready | **Last Updated:** Sep 2, 2024

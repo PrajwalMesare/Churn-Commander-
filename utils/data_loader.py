@@ -167,7 +167,7 @@ def get_customer_info_dict(customer_data: pd.DataFrame) -> dict:
 def load_default_data():
     """Load default KKBOX data if available"""
     try:
-        df = pd.read_csv('ui_data.csv')
+        df = pd.read_csv('data/ui_data.csv')
         return df, f"✅ Loaded default data ({len(df)} customers)"
     except:
         return None, "⚠️ Default data not found"

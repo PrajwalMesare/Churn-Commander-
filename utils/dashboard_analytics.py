@@ -91,7 +91,7 @@ def get_top_risk_drivers(df: pd.DataFrame, predictions: np.ndarray, n_top: int =
         import joblib
         
         # Load model
-        model = joblib.load('churn_model.pkl')
+        model = joblib.load('models/churn_model.pkl')
         
         # Get feature importance from model
         feature_importance = model.feature_importances_

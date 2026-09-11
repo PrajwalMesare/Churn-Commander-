@@ -121,8 +121,8 @@ def check_system_health() -> dict:
     import streamlit as st
     
     health = {
-        'model_file': os.path.isfile('churn_model.pkl'),
-        'data_file': os.path.isfile('ui_data.csv'),
+        'model_file': os.path.isfile('models/churn_model.pkl'),
+        'data_file': os.path.isfile('data/ui_data.csv'),
         'logs_dir': os.path.isdir('logs'),
         'config_dir': os.path.isdir('config'),
         'has_gemini_key': 'GEMINI_API_KEY' in st.secrets,

@@ -20,10 +20,10 @@ FEATURES = [
 def load_model():
     """Load pre-trained XGBoost model"""
     try:
-        model = joblib.load('churn_model.pkl')
+        model = joblib.load('models/churn_model.pkl')
         return model, True, "✅ Model loaded successfully"
     except FileNotFoundError:
-        return None, False, "❌ Model file not found: churn_model.pkl"
+        return None, False, "❌ Model file not found: models/churn_model.pkl"
     except Exception as e:
         return None, False, f"❌ Error loading model: {str(e)}"
 

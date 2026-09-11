@@ -16,11 +16,10 @@
 *.xlsx
 *.xls
 *.parquet
-data/
 *.pkl
 *.joblib
-!ui_data.csv
-!churn_model.pkl
+!data/ui_data.csv
+!models/churn_model.pkl
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # LOGS & CACHES
